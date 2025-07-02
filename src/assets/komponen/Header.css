@@ -1,0 +1,169 @@
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.kontainer-semua{
+    display: flex;
+    align-items:center;
+    position: fixed;    
+    justify-content: space-between;
+    top: 0;          
+    left: 0;
+    z-index: 1000;   
+    height: 80px;
+  
+      
+}
+.logo{
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    color: #1F2937;
+}
+.Judul{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 1rem;
+}
+.logothinkara{
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(31, 41, 55, 0.15);
+    object-fit: cover;
+    background: linear-gradient(135deg, #FBBF24 40%, #61dafb 100%);
+    border: 2px solid #FBBF24;
+    transition: box-shadow 0.3s, border-color 0.3s;
+
+}
+
+.containernavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+    margin-left: 930px;
+    text-align: center;
+}
+
+.containernavbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.containernavbar li {
+    display: inline-block;
+}
+
+.userinput {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+.login, .signup {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #FBBF24;
+    color: black;
+    font-weight:600px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+.containernavbar li {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+
+}
+.home, .courses, .about, .contact {
+    color: #1F2937;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: color 0.3s ease-in-out;
+    
+} 
+.home:hover, .courses:hover, .about:hover, .contact:hover {
+    text-decoration: underline;
+    transition: text-decoration-color 3s, text-underline-offset 0.3s;
+    text-decoration-color: #61dafb;
+    text-underline-offset: 6px;
+}
+.login:hover, .signup:hover {
+    background-color: #000000;
+    color: rgb(0, 255, 234);
+    
+}
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .kontainer-semua {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 1rem;
+        position: static;
+    }
+
+    .logo {
+        justify-content: center;
+        font-size: 1rem;
+        padding: 0.5em;
+        height: 3em;
+    }
+
+    .Judul {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+
+    .containernavbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .containernavbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .containernavbar li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+        align-items: center;
+    }
+
+    .userinput {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .login, .signup {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.75rem 0;
+    }
+}

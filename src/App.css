@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 10px;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: white ;
+  color: #333;
+
+
+}
+.Teks1{
+  text-align: justify;
+}
+.Teks2{
+  text-align: justify;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.kontainerall{
+  width: 100%;
+  max-width: 900px;
+  margin-left: 0px;
+  padding: 3rem 2rem;
+  background: linear-gradient(90deg, rgba(30,58,138,0.60) 0%, rgba(59,89,152,0.30) 40%, rgba(96,165,250,0.10) 100%);
+  /* Softer left side, more gradual transition, more transparent */
+  opacity: 1;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bawah{
+  background-color: #3B82F6;
+  color: #fff;
+  padding: 1.5em 0;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 2px solid #61dafb;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
