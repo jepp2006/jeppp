@@ -1,5 +1,7 @@
+import React from 'react';
+
 function HeroSection(props) {
-    const { desc1, desc2 } = props;
+  const { desc1, desc2 } = props;
   return (
     <div className="kontainerall">
       <div className="Teks1">
@@ -16,4 +18,5 @@ function HeroSection(props) {
     </div>
   );
 }
+
 export default HeroSection;
